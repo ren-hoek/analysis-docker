@@ -1,0 +1,28 @@
+version: '3'
+services:
+  rstudio:
+    image: analysis/full-stack
+    hostname: rstudio 
+    environment:
+      RSTUDIO: 1
+    ports:
+      - 8787:8787
+    volumes:
+      - /etc/passwd:/etc/passwd
+      - /etc/shadow:/etc/shadow
+      - /etc/group:/etc/group
+      - /etc/gshadow:/etc/gshadow
+      - /home:/home
+  nginx:
+    image: nginx
+    hostname: nginx 
+    ports:
+      - 80:80
+      - 8080:8080
+    volumes:
+      - /home/gavin/Data/nginx/conf:/etc/nginx
+      - /home/gavin/Data/nginx/html:/usr/share/nginx/html
+networks:
+  default:
+    external:
+      name: jupyterhub
