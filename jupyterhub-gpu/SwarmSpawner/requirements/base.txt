@@ -1,2 +1,0 @@
-docker>=2.0.2
-jupyterhub>=0.7.2

@@ -17,6 +17,7 @@ docker run -d \
 	--device /dev/nvidia-uvm:/dev/nvidia-uvm \
 	--device /dev/nvidia0:/dev/nvidia0 \
 	-p 8888:8888 \
-	--name gpu_notebook \
+	--net jupyterhub \
+	--name nvidia \
 	analysis/gpu-notebook
 

@@ -19,6 +19,7 @@ services:
     ports:
       - 80:80
       - 8080:8080
+      - 8081:8081
     volumes:
       - /home/gavin/Data/nginx/conf:/etc/nginx
       - /home/gavin/Data/nginx/html:/usr/share/nginx/html
