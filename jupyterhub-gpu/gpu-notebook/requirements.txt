@@ -21,7 +21,7 @@ scrapy
 beautifulsoup4 
 plotly 
 networkx
-tensorflow
+tensorflow-gpu
 keras 
 xgboost
 pyldavis
@@ -32,4 +32,3 @@ bokeh
 statsmodels
 opencv-python
 pixiedust
-pyenchant

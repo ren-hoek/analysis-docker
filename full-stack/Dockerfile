@@ -6,7 +6,7 @@
 #FROM ubuntu@sha256:84c334414e2bfdcae99509a6add166bbb4fa4041dc3fa6af08046a66fed3005f
 FROM analysis/rstudio
 
-RUN apt-get -y install python3 python3-dev python3-pip
+RUN apt-get -y install python3 python3-dev python3-pip enchant
 RUN pip3 install --upgrade pip
 RUN pip3 install --no-cache-dir notebook jupyterhub jupyterlab virtualenv
 RUN jupyter serverextension enable --py jupyterlab --sys-prefix

@@ -1,0 +1,283 @@
+[
+    {
+        "Id": "904c2465a4b3320e94c0a7a232c9abd958c1355b4de16ed8f3725701f1771437",
+        "Created": "2017-11-14T22:30:28.550345352Z",
+        "Path": "tini",
+        "Args": [
+            "--",
+            "start-notebook.sh"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 15460,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2017-11-14T22:30:29.009161805Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:4e4698e45c477d920a3e3210ccc91dd97cab555d5f747fb3a20f4ef99b488e69",
+        "ResolvConfPath": "/var/lib/docker/containers/904c2465a4b3320e94c0a7a232c9abd958c1355b4de16ed8f3725701f1771437/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/904c2465a4b3320e94c0a7a232c9abd958c1355b4de16ed8f3725701f1771437/hostname",
+        "HostsPath": "/var/lib/docker/containers/904c2465a4b3320e94c0a7a232c9abd958c1355b4de16ed8f3725701f1771437/hosts",
+        "LogPath": "/var/lib/docker/containers/904c2465a4b3320e94c0a7a232c9abd958c1355b4de16ed8f3725701f1771437/904c2465a4b3320e94c0a7a232c9abd958c1355b4de16ed8f3725701f1771437-json.log",
+        "Name": "/gpu_notebook",
+        "RestartCount": 0,
+        "Driver": "aufs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/etc/gshadow:/etc/gshadow",
+                "/home:/home",
+                "nvidia_driver_384.90:/usr/local/nvidia:ro",
+                "/etc/passwd:/etc/passwd",
+                "/etc/shadow:/etc/shadow",
+                "/etc/group:/etc/group"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {
+                "8888/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "8888"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "shareable",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [
+                {
+                    "PathOnHost": "/dev/nvidiactl",
+                    "PathInContainer": "/dev/nvidiactl",
+                    "CgroupPermissions": "rwm"
+                },
+                {
+                    "PathOnHost": "/dev/nvidia-uvm",
+                    "PathInContainer": "/dev/nvidia-uvm",
+                    "CgroupPermissions": "rwm"
+                },
+                {
+                    "PathOnHost": "/dev/nvidia0",
+                    "PathInContainer": "/dev/nvidia0",
+                    "CgroupPermissions": "rwm"
+                }
+            ],
+            "DeviceCgroupRules": null,
+            "DiskQuota": 0,
+            "KernelMemory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": 0,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0
+        },
+        "GraphDriver": {
+            "Data": null,
+            "Name": "aufs"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home",
+                "Destination": "/home",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "volume",
+                "Name": "nvidia_driver_384.90",
+                "Source": "/var/lib/nvidia-docker/volumes/nvidia_driver/384.90",
+                "Destination": "/usr/local/nvidia",
+                "Driver": "nvidia-docker",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": ""
+            },
+            {
+                "Type": "bind",
+                "Source": "/etc/passwd",
+                "Destination": "/etc/passwd",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/etc/shadow",
+                "Destination": "/etc/shadow",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/etc/group",
+                "Destination": "/etc/group",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/etc/gshadow",
+                "Destination": "/etc/gshadow",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "904c2465a4b3",
+            "Domainname": "",
+            "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "8888/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "USER=gavin",
+                "LD_LIBRARY_PATH=/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/cuda-8.0/lib64",
+                "PATH=/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "CUDA_VERSION=8.0.61",
+                "NVIDIA_CUDA_VERSION=8.0.61",
+                "CUDA_PKG_VERSION=8-0=8.0.61-1",
+                "NVIDIA_VISIBLE_DEVICES=all",
+                "NVIDIA_DRIVER_CAPABILITIES=compute,utility",
+                "DEBIAN_FRONTEND=noninteractive",
+                "LC_ALL=en_US.UTF-8",
+                "LANG=en_US.UTF-8",
+                "LANGUAGE=en_US.UTF-8"
+            ],
+            "Cmd": [
+                "start-notebook.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "jupyter/gpu-notebook",
+            "Volumes": null,
+            "WorkingDir": "/",
+            "Entrypoint": [
+                "tini",
+                "--"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "com.nvidia.cuda.version": "8.0.61",
+                "com.nvidia.volumes.needed": "nvidia_driver",
+                "maintainer": "NVIDIA CORPORATION <cudatools@nvidia.com>"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "7967f16392738eb5e1f742ca9628043bcc3bc9732e07aee30f57e9e15c76fd30",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "8888/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "8888"
+                    }
+                ]
+            },
+            "SandboxKey": "/var/run/docker/netns/7967f1639273",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "07209558342f6b909c8c927eae2ad226ffb7141762545edf9368e5b79b617485",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.2",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "02:42:ac:11:00:02",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "NetworkID": "4055fbc88659c32a00887ba8379cb72657d97ebeda63255b1ea95ad4d141e7b2",
+                    "EndpointID": "07209558342f6b909c8c927eae2ad226ffb7141762545edf9368e5b79b617485",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:11:00:02",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]
